@@ -1,8 +1,8 @@
 import React from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import { NavLink } from 'react-router-dom';
+
 import PropTypes from 'prop-types';
-import resumePdf from '../data/Felix Kan Resume.pdf';
+import resumePdf from '../data/felixResume.pdf';
 
 const Nav = ({ toggleTheme, theme }) => {
   return (
@@ -12,7 +12,7 @@ const Nav = ({ toggleTheme, theme }) => {
         {/* <NavLink to="/about" activeClassName="chosen">
           about{' '}
         </NavLink> */}
-        <a href={resumePdf} target="_blank">
+        <a href={resumePdf} target="_blank" rel="noreferrer">
           resume
         </a>
         <DarkModeSwitch

@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Nav from './components/Nav';
+import { ThemeProvider } from './context/theme';
 
-function App() {
+const App = () => {
+  const [theme, setTheme] = useState('dark');
+  const toggleTheme = () => {
+    setTheme((theme) => (theme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ThemeProvider value={theme}>
+        <div className={`container ${theme}`}>
+          <Nav toggleTheme={toggleTheme} theme={theme} />
+          <Route exact path="/" component={Home} />
+        </div>
+      </ThemeProvider>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -162,6 +162,7 @@ img {
   /* Cover Page */
 
   .profile-pic {
+    margin-top: 2rem;
     border-radius: 50%;
     width: 220px;
     height: auto;

@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { Fragment } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import profile from '../images/profile.jpeg';
 import { IoIosArrowDown } from 'react-icons/io';

@@ -24,9 +24,11 @@ const ProjectItem = ({ project }) => {
             <li>{tech}</li>
           ))}
         </ul>
-        <SocialIcon url={githubLink} />
+
         <p>
-          Check it out <a href={demoLink}>here</a>
+          Check it out:&nbsp; <a href={demoLink}>Demo</a>
+          <span> &nbsp;</span>
+          <a href={githubLink}>Github</a>
         </p>
       </div>
     </div>

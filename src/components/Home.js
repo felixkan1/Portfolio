@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
-
+import React, { Fragment, useContext } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import profile from '../images/profile.jpeg';
 import { IoIosArrowDown } from 'react-icons/io';
 import { projects } from '../data/projects';
 import ProjectItem from './ProjectItem';
-
+import ThemeContext from '../context/theme';
 const Home = () => {
+  const theme = useContext(ThemeContext);
   return (
     <Fragment>
       <h1>Hi there!</h1>
@@ -21,7 +21,11 @@ const Home = () => {
             <SocialIcon url="https://www.linkedin.com/in/felix-kan-3538a7b3/" />
           </li>
           <li className="social-icon">
-            <SocialIcon url="https://github.com/felixkan1" />
+            <SocialIcon
+              url="https://github.com/felixkan1"
+              fgColor={'white'}
+              bgColor={'dark'}
+            />
           </li>
         </ul>
       </div>

@@ -29,7 +29,7 @@ body {
   padding: 30px;
 }
 
-
+/* Mobile */
 
 /* Nav bar */
 
@@ -150,6 +150,8 @@ img {
   color: rgb(255, 46, 0);
 }
 
+/* Tablet and desktop */
+
 @media only screen and (min-width: 768px) {
 
 
@@ -161,20 +163,20 @@ img {
 
   .profile-pic {
     border-radius: 50%;
-    width: 420px;
+    width: 220px;
     height: auto;
   }
 
   .intro-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
   .social-buttons {
     display: block;
     list-style: none;
-    padding-left: 30px;
+
   }
 
   .social-buttons li {
@@ -185,16 +187,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5rem;
+    margin: 3rem;
   }
 
   /* Project */
-  img {
-    float: left;
-    width: 600px;
-    height: 300px;
-    object-fit: cover;
-  }
 
   .project-item {
     display: flex;
@@ -204,13 +200,24 @@ img {
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.192);
   }
 
-  .project-title {
-    margin: 0;
+  .project-item img {
+    float: left;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+
   }
 
   .project-info {
     margin-left: 4rem;
+
   }
+
+  .project-title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
 
   .tech-stack {
     margin-bottom: 4rem;

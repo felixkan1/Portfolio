@@ -4,9 +4,8 @@ import profile from '../images/profile.jpeg';
 import { IoIosArrowDown } from 'react-icons/io';
 import { projects } from '../data/projects';
 import ProjectItem from './ProjectItem';
-import ThemeContext from '../context/theme';
+
 const Home = () => {
-  const theme = useContext(ThemeContext);
   return (
     <Fragment>
       <h1>Hi there!</h1>

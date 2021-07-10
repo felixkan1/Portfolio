@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import ThemeContext from '../context/theme';
-import { SocialIcon } from 'react-social-icons';
+
 const ProjectItem = ({ project }) => {
   const theme = useContext(ThemeContext);
   const {
